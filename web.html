@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KOREAN WaVe</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div id="audio">
+        <audio src="runBTS.m4a"
+        controls
+        autoplay
+        loop></audio>
+    </div>
+    <header>
+        <h1><a href="web.html">Korean Wave</a></h1>
+        <ul class="menu">
+            <li><a href="music.html">K-POP</a>
+                <ul class="submenu"> 
+                    <li><a href="music.html#sub1-1">K-POP이란?</a></li>
+                    <li><a href="music.html#sub1-2">K-POP의 역사</a></li>
+                    <li><a href="music.html#sub1-3">K-POP의 의의</a></li>
+                    <li><a href="music.html#sub1-4">관련산업</a></li>
+                    <li><a href="music.html#sub1-5">개선할 점</a></li>
+                </ul>
+            </li>
+            <li><a href="drama.html">K-DRAMA</a>
+              <ul class="submenu">
+                <li><a href="drama.html#sub2-1">K-DRAMA란?</a></li>
+                <li><a href="drama.html#sub2-2">K-DRAMA의 역사</a></li>
+                <li><a href="drama.html#sub2-3">K-DRAMA의 의의</a></li>
+                <li><a href="drama.html#sub2-4">관련산업</a></li>
+                <li><a href="drama.html#sub2-5">개선할 점</a></li>
+              </ul>
+            </li>
+        </ul>
+    </header>
+    <div id="return">
+        <input type="button" value="뒤로가기" onclick="history.back();" />
+    </div>
+    <section>
+        <h1>한류 뉴스</h1>
+        <iframe class="myFrame"
+        width= "100%"
+        height="100%" 
+        src="https://www.korea.kr/news/visualNewsView.do?newsId=148905765"
+        frameborder="0">
+        </iframe>
+        <script type="text/javascript"> 
+            <!-- 창 크기에 맞춰 iframe의 크기가 조정되게끔 자바스크립트를 활용함 -->
+            $(document).ready(function(){
+            $(window).resize(function(){
+                $("iframe.myFrame").height($(window).height()-50);
+                $("iframe.myFrame").width($(window).width()-50);
+            });
+            });
+        </script>
+    </section>
+    <footer>
+        컴퓨터공학부 류지원 202101265
+        <br>
+        &copy; Copyright(c) 류지원 All Rights Reserved.
+    </footer>
+    
+</body>
+</html>
